@@ -1,4 +1,14 @@
+Good color contrast is essential for web accessibility and effective design. Sufficient contrast ensures text is readable for all users, including those with visual impairments or those using devices in bright environments. The WCAG guidelines provide standards for minimum contrast ratios to ensure content is perceivable for everyone.
+
+Use this project to check if your color combinations meet accessibility standards and to create designs that are both beautiful and inclusive.
+
 ## Web Version 
+
+### Link
+
+[Use the Color Contrast Calculator](https://hmadisonturner.github.io/ColorContrast/web/index.html)
+
+### Features
 
 1. Interactive Color Selection
 
@@ -30,7 +40,34 @@
    - Red indicators for failing combinations
 
 
-## Python CLI Version:
+## Python CLI Version
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/hmadisonturner/ColorContrast.git
+cd ColorContrast/cli
+```
+
+### Usage 
+
+```bash
+# Basic usage with hex colors (with # prefix)
+python contrast.py "#FFFFFF" "#000000"
+
+# Basic usage with hex colors (without # prefix)
+python contrast.py FFFFFF 000000
+
+# Using RGB values
+python contrast.py 255,255,255 0,0,0
+
+# Verbose output with detailed compliance information
+python contrast.py --verbose "#FFFFFF" "#000000"
+
+```
+
+### Features
 
 1. Flexible Input Formats
 
@@ -59,22 +96,6 @@
    - Shows help text if input is incorrect
 
 
-### Usage Examples:
-
-```bash
-# Basic usage with hex colors (with # prefix)
-python contrast.py "#FFFFFF" "#000000"
-
-# Basic usage with hex colors (without # prefix)
-python contrast.py FFFFFF 000000
-
-# Using RGB values
-python contrast.py 255,255,255 0,0,0
-
-# Verbose output with detailed compliance information
-python contrast.py --verbose "#FFFFFF" "#000000"
-
-```
 
 
 
